@@ -1,0 +1,18 @@
+= Simply Taggable
+
+Introduction goes here.
+
+== Usage
+
+== Example
+
+Example goes here.
+
+
+== Credit and References
+
+Can't remember which one, but I'm sure that I got much of this from a
+Ryan Bates Railscast.
+
+
+Copyright (c) 2009 [George 'Jake' Wendt], released under the MIT license
