@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{jakewendt-simply_taggable}
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["George 'Jake' Wendt"]
@@ -16,21 +16,10 @@ Gem::Specification.new do |s|
     "README.rdoc"
   ]
   s.files = [
-    ".gitignore",
-     "MIT-LICENSE",
-     "README.rdoc",
-     "Rakefile",
-     "VERSION",
-     "app/models/tag.rb",
+    "app/models/tag.rb",
      "app/models/tagging.rb",
-     "init.rb",
-     "jakewendt-simply_taggable.gemspec",
      "lib/simply_taggable.rb",
-     "lib/simply_taggable/simply_taggable.rb",
-     "lib/tasks/simply_taggable_tasks.rake",
-     "rails/init.rb",
-     "test/simply_taggable_test.rb",
-     "test/test_helper.rb"
+     "lib/simply_taggable/simply_taggable.rb"
   ]
   s.homepage = %q{http://github.com/jakewendt/simply_taggable}
   s.rdoc_options = ["--charset=UTF-8"]
