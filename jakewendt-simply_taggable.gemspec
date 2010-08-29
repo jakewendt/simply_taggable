@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{jakewendt-simply_taggable}
-  s.version = "0.0.0"
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["George 'Jake' Wendt"]
@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
      "app/models/tag.rb",
      "app/models/tagging.rb",
      "init.rb",
+     "jakewendt-simply_taggable.gemspec",
      "lib/simply_taggable.rb",
      "lib/simply_taggable/simply_taggable.rb",
      "lib/tasks/simply_taggable_tasks.rake",
