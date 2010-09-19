@@ -9,7 +9,10 @@ require File.join(File.dirname(__FILE__), 'boot')
 Rails::Initializer.run do |config|
 
 	config.gem "sqlite3-ruby", :lib => "sqlite3"
-	config.gem "jrails"
+
+	config.gem 'jakewendt-assert_this_and_that',
+		:lib    => 'assert_this_and_that',
+		:source => 'http://rubygems.org'
 
 	require 'simply_taggable'
 
