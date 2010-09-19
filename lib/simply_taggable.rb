@@ -1,8 +1,8 @@
-module Simply
+module SimplyTaggable
 #	predefined namespace
 end
 require 'active_record'
-require 'simply_taggable/simply_taggable'
+require 'simply_taggable/base'
 
 # From http://guides.rubyonrails.org/plugins.html#controllers
 # Fix for:

@@ -1,4 +1,4 @@
-module Simply::Taggable
+module SimplyTaggable::Base
 	def self.included(base)
 		base.extend(ClassMethods)
 	end
@@ -9,7 +9,7 @@ module Simply::Taggable
 #	add some options like :by => :user 
 #	in case User isn't the model of choice
 
-			include Simply::Taggable::InstanceMethods
+			include SimplyTaggable::Base::InstanceMethods
 
 			has_many :taggings, 
 				:as => :taggable, 
@@ -46,4 +46,4 @@ module Simply::Taggable
 
 	end 
 end
-ActiveRecord::Base.send(:include, Simply::Taggable)
+ActiveRecord::Base.send(:include, SimplyTaggable::Base)

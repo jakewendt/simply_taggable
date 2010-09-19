@@ -18,4 +18,25 @@ ActiveRecord::Schema.define(:version => 20100101010000) do
     t.datetime "updated_at"
   end
 
+  create_table "taggings", :force => true do |t|
+    t.integer  "taggable_id"
+    t.string   "taggable_type"
+    t.integer  "tag_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "taggings", ["tag_id"], :name => "by_tag_id"
+  add_index "taggings", ["taggable_id", "taggable_type"], :name => "by_taggable"
+
+  create_table "tags", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "name"
+    t.integer  "taggables_count", :default => 0, :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "tags", ["name", "user_id"], :name => "by_name", :unique => true
+
 end
