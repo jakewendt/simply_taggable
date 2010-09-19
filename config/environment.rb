@@ -11,4 +11,8 @@ Rails::Initializer.run do |config|
 	config.gem "sqlite3-ruby", :lib => "sqlite3"
 	config.gem "jrails"
 
+	require 'simply_taggable'
+
+	config.autoload_paths << File.expand_path( File.join(File.dirname(__FILE__),'..','test/app/models'))
+
 end

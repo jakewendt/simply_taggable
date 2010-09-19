@@ -1,6 +1,7 @@
 module Simply
 #	predefined namespace
 end
+require 'active_record'
 require 'simply_taggable/simply_taggable'
 
 # From http://guides.rubyonrails.org/plugins.html#controllers
