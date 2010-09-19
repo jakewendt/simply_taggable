@@ -12,8 +12,10 @@ versions
 /config/s3.yml
 /config/initializers/mail.rb
 /config/initializers/session_store.rb
+/config/initializers/cookie_verification_secret.rb
 /coverage.data
 /coverage/
+/db/*.sqlite3
 /doc/
 /log/
 /test/tmp/

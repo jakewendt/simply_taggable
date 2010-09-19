@@ -44,3 +44,8 @@ begin
 rescue LoadError
 	puts "Jeweler (or a dependency) not available. Install it with: gem install jeweler"
 end
+
+require(File.join(File.dirname(__FILE__), 'config', 'boot'))
+require 'rdoc'
+require 'rdoc/rdoc'
+require 'tasks/rails'

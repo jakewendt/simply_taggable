@@ -14,5 +14,4 @@ Example goes here.
 Can't remember which one, but I'm sure that I got much of this from a
 Ryan Bates Railscast.
 
-
 Copyright (c) 2009 [George 'Jake' Wendt], released under the MIT license
