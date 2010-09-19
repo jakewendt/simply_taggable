@@ -22,7 +22,7 @@ begin
 		gem.authors = ["George 'Jake' Wendt"]
 		# gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
 
-		gem.files = FileList['lib/**/*.rb','app/**/*.rb']
+		gem.files = FileList['lib/**/*.rb','app/**/*.rb','db/**/*.rb']
 #		gem.files = FileList['lib/**/*.rb','bin/**/*.rb','templates/**/*.rb']
 #		gem.test_files = []
 
