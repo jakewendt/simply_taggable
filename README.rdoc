@@ -12,9 +12,15 @@ Example goes here.
 
 == Usage
 
+Add the following to your config/environment.rb (Rails 2)
+
  config.gem 'jakewendt-simply_taggable',
    :lib    => 'simply_taggable',
    :source => 'http://rubygems.org'
+
+Add the following line to your Rakefile
+
+ require 'simply_taggable/tasks'
 
 == ToDo
 
