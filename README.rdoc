@@ -9,6 +9,27 @@ Introduction goes here.
 Example goes here.
 
 
+
+== Usage
+
+ config.gem 'jakewendt-simply_taggable',
+   :lib    => 'simply_taggable',
+   :source => 'http://rubygems.org'
+
+== ToDo
+
+
+== Dev How To
+
+ rake version:write
+ rake gemspec
+ rake version:bump:patch
+ rake install
+
+ #	eventually
+ rake release
+
+
 == Credit and References
 
 Can't remember which one, but I'm sure that I got much of this from a

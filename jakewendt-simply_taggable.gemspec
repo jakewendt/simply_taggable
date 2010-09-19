@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{jakewendt-simply_taggable}
-  s.version = "0.1.1"
+  s.version = "0.2.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["George 'Jake' Wendt"]
-  s.date = %q{2010-08-29}
+  s.date = %q{2010-09-19}
   s.description = %q{longer description of your gem}
   s.email = %q{github@jake.otherinbox.com}
   s.extra_rdoc_files = [
@@ -18,8 +18,12 @@ Gem::Specification.new do |s|
   s.files = [
     "app/models/tag.rb",
      "app/models/tagging.rb",
+     "db/migrate/20090831223322_create_tags.rb",
+     "db/migrate/20090831223416_create_taggings.rb",
+     "db/schema.rb",
      "lib/simply_taggable.rb",
-     "lib/simply_taggable/simply_taggable.rb"
+     "lib/simply_taggable/simply_taggable.rb",
+     "lib/simply_taggable/tasks.rb"
   ]
   s.homepage = %q{http://github.com/jakewendt/simply_taggable}
   s.rdoc_options = ["--charset=UTF-8"]
@@ -27,8 +31,9 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{one-line summary of your gem}
   s.test_files = [
-    "test/simply_taggable_test.rb",
-     "test/test_helper.rb"
+    "test/app/models/post.rb",
+     "test/test_helper.rb",
+     "test/unit/post_test.rb"
   ]
 
   if s.respond_to? :specification_version then
