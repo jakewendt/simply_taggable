@@ -1,4 +1,4 @@
-class CreatePosts < ActiveRecord::Migration
+class TestOnlyCreatePosts < ActiveRecord::Migration
 	def self.up
 		create_table :posts do |t|
 			t.string :title

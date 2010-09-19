@@ -38,3 +38,4 @@ require(File.join(File.dirname(__FILE__), 'config', 'boot'))
 require 'rdoc'
 require 'rdoc/rdoc'
 require 'tasks/rails'
+require 'simply_taggable/tasks'
