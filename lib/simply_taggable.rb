@@ -3,6 +3,7 @@ module SimplyTaggable
 end
 require 'active_record'
 require 'simply_taggable/base'
+require 'simply_taggable/assertions'
 
 # From http://guides.rubyonrails.org/plugins.html#controllers
 # Fix for:
