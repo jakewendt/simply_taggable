@@ -1,7 +1,6 @@
 module SimplyTaggable
 #	predefined namespace
 end
-require 'active_record'
 require 'simply_taggable/base'
 require 'simply_taggable/assertions'
 

@@ -46,4 +46,5 @@ module SimplyTaggable::Base
 
 	end 
 end
+require 'active_record'
 ActiveRecord::Base.send(:include, SimplyTaggable::Base)
