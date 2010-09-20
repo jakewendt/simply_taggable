@@ -4,6 +4,7 @@ end
 require 'simply_taggable/base'
 require 'simply_taggable/assertions'
 
+require 'active_support'
 # From http://guides.rubyonrails.org/plugins.html#controllers
 # Fix for:
 # ArgumentError in SurveyorController#edit 
