@@ -24,6 +24,10 @@ Add the following line to your Rakefile
 
 == ToDo
 
+Import existing model tests.
+
+Add namable type tags/taggings
+
 
 == Dev How To
 
