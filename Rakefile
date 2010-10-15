@@ -29,7 +29,7 @@ begin
 #		gem.files = FileList['lib/**/*.rb','bin/**/*.rb','templates/**/*.rb']
 #		gem.test_files = []
 
-		gem.add_dependency('rails', '>= 2.3.8')
+		gem.add_dependency('rails', '~> 2')
 
 	end
 	Jeweler::GemcutterTasks.new
