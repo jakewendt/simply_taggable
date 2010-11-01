@@ -28,6 +28,7 @@ begin
 
 #		gem.files = FileList['lib/**/*.rb','bin/**/*.rb','templates/**/*.rb']
 #		gem.test_files = []
+#		gem.test_files -= FileList['test/test_helper.rb']
 
 		gem.add_dependency('rails', '~> 2')
 
