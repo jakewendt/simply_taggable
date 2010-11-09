@@ -4,6 +4,15 @@ module SimplyTaggable::Base
 	end
 
 	module ClassMethods
+
+		def simply_taggable_tagger
+	
+			has_many :tags, 
+				:as => :tagger, 
+				:dependent => :destroy
+
+		end
+
 		def simply_taggable
 
 #	add some options like :by => :user 

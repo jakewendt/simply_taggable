@@ -6,8 +6,10 @@ class Tag < ActiveRecord::Base
 
 	validates_presence_of :tagger_id, :tagger_type
 	validates_presence_of :name
-	validates_length_of :name, :minimum => 1
+	validates_length_of :name, :in => 1..250
 	validates_uniqueness_of :name, :scope => [:tagger_id, :tagger_type]
+
+	attr_accessible :name
 
 	class MultipleTagsFound < StandardError
 		attr_reader :message;
