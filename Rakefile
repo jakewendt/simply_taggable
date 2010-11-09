@@ -4,11 +4,11 @@ require 'rake/rdoctask'
 
 desc 'Generate documentation for the simply_taggable plugin.'
 Rake::RDocTask.new(:rdoc) do |rdoc|
-  rdoc.rdoc_dir = 'rdoc'
-  rdoc.title    = 'SimplyTaggable'
-  rdoc.options << '--line-numbers' << '--inline-source'
-  rdoc.rdoc_files.include('README')
-  rdoc.rdoc_files.include('lib/**/*.rb')
+	rdoc.rdoc_dir = 'rdoc'
+	rdoc.title		= 'SimplyTaggable'
+	rdoc.options << '--line-numbers' << '--inline-source'
+	rdoc.rdoc_files.include('README')
+	rdoc.rdoc_files.include('lib/**/*.rb')
 end
 
 begin
@@ -42,4 +42,4 @@ require(File.join(File.dirname(__FILE__), 'config', 'boot'))
 require 'rdoc'
 require 'rdoc/rdoc'
 require 'tasks/rails'
-require 'simply_taggable/tasks'
+#require 'simply_taggable/tasks'

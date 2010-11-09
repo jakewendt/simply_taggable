@@ -6,6 +6,13 @@ Introduction goes here.
 
 Build generator to install migrations, javascript, stylesheets, tasks, autotest
 
+Build complete tests
+
+Import existing model tests.
+
+Add namable type tags/taggings
+
+
 == Example
 
 Example goes here.
@@ -14,31 +21,22 @@ Example goes here.
 
 == Usage
 
-Add the following to your config/environment.rb (Rails 2)
-
  config.gem 'jakewendt-simply_taggable',
    :lib    => 'simply_taggable',
    :source => 'http://rubygems.org'
 
-Add the following line to your Rakefile
+== Gemified with Jeweler
 
- require 'simply_taggable/tasks'
-
-== ToDo
-
-Import existing model tests.
-
-Add namable type tags/taggings
-
-
-== Dev How To
-
+ vi Rakefile
  rake version:write
- rake gemspec
- rake version:bump:patch
- rake install
 
- #	eventually
+ rake version:bump:patch
+ rake version:bump:minor
+ rake version:bump:major
+
+ rake gemspec
+
+ rake install
  rake release
 
 
