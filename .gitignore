@@ -11,8 +11,8 @@ versions
 /config/juggernaut_hosts.yml
 /config/s3.yml
 /config/initializers/mail.rb
-/config/initializers/session_store.rb
-/config/initializers/cookie_verification_secret.rb
+#/config/initializers/session_store.rb
+#/config/initializers/cookie_verification_secret.rb
 /coverage.data
 /coverage/
 /db/*.sqlite3

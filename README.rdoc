@@ -2,7 +2,9 @@
 
 Introduction goes here.
 
-== Usage
+== TODO
+
+Build generator to install migrations, javascript, stylesheets, tasks, autotest
 
 == Example
 
