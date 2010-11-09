@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100101010000) do
+ActiveRecord::Schema.define(:version => 20101109221232) do
 
   create_table "posts", :force => true do |t|
     t.string   "title"
@@ -38,5 +38,11 @@ ActiveRecord::Schema.define(:version => 20100101010000) do
   end
 
   add_index "tags", ["name", "user_id"], :name => "by_name", :unique => true
+
+  create_table "users", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
