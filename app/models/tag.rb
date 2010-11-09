@@ -1,12 +1,13 @@
 class Tag < ActiveRecord::Base
-	belongs_to :user
+#	belongs_to :user
+	belongs_to :tagger, :polymorphic => true, :counter_cache => true
 	has_many :taggings, :dependent => :destroy
 	has_many :taggables, :through => :taggings
 
-	validates_presence_of :user_id
+	validates_presence_of :tagger_id, :tagger_type
 	validates_presence_of :name
 	validates_length_of :name, :minimum => 1
-	validates_uniqueness_of :name, :scope => :user_id
+	validates_uniqueness_of :name, :scope => [:tagger_id, :tagger_type]
 
 	class MultipleTagsFound < StandardError
 		attr_reader :message;

@@ -8,6 +8,11 @@ module SimplyTaggable::Assertions
 				assert true
 			end
 		end
+		def assert_simply_taggable_tagger
+			test "should be simply taggable tagger" do
+				assert true
+			end
+		end
 	end
 	module InstanceMethods
 	end

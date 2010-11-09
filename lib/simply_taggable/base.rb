@@ -37,8 +37,9 @@ module SimplyTaggable::Base
 			if @tag_names
 				self.tags = @tag_names.names_to_array.map do |name|
 					Tag.find_or_create({
-						:name => name.squish,
-						:user_id => self.user_id
+						:name   => name.squish,
+						:tagger => self.tagger
+#						:user_id => self.user_id
 					}) if !name.blank?
 				end
 			end
