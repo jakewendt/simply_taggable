@@ -26,6 +26,7 @@ Example goes here.
    :source => 'http://rubygems.org'
 
  script/generate simply_taggable
+ script/generate simply_taggable_tagger User    <- Maybe
 
 
 == Gemified with Jeweler
