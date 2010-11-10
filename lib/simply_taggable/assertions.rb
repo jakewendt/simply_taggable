@@ -3,29 +3,30 @@ module SimplyTaggable::Assertions
 		base.extend(ClassMethods)
 	end
 	module ClassMethods
-		def assert_simply_taggable
 
-#			assert_should_have_many :taggings
-#			assert_should_have_many :tags, :as => :taggable
+		def assert_simply_taggable
 
 			test "should be simply taggable" do
 				assert model_name.constantize.new.respond_to?(:tags)
 				assert model_name.constantize.new.respond_to?(:taggings)
+#				self.class.assert_should_have_many :taggings
+#				self.class.assert_should_have_many :tags, :polymorphic => true
 			end
+
 		end
+
 		def assert_simply_taggable_tagger
 
-#	add this to simply_testable
-#			assert_should_have_many :tags, :as => :tagger
-
 			test "should be simply taggable tagger" do
+#				self.class.assert_should_have_many :tags, :polymorphic => true
+
 				assert model_name.constantize.new.respond_to?(:tags)
 #				assert model_name.constantize.new.respond_to?(:taggings)
 			end
+
 		end
 	end
-	module InstanceMethods
-	end
+
 end
 require 'active_support'
 require 'active_support/test_case'

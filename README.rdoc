@@ -6,6 +6,8 @@ Introduction goes here.
 
 Build generator to install migrations, javascript, stylesheets, tasks, autotest
 
+Generator also creates factory initializer
+
 Build complete tests
 
 Import existing model tests.

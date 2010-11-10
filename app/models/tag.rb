@@ -1,6 +1,6 @@
 class Tag < ActiveRecord::Base
 #	belongs_to :user
-	belongs_to :tagger, :polymorphic => true, :counter_cache => true
+	belongs_to :tagger, :polymorphic => true	#, :counter_cache => true
 	has_many :taggings, :dependent => :destroy
 	has_many :taggables, :through => :taggings
 

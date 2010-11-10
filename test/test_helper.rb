@@ -10,8 +10,6 @@ class ActiveSupport::TestCase
 	fixtures :all
 end
 
-class ActionController::TestCase
-
-	setup :turn_https_on
-
-end
+#class ActionController::TestCase
+#	setup :turn_https_on
+#end

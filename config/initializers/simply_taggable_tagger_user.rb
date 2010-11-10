@@ -1,0 +1,1 @@
+User.simply_taggable_tagger
