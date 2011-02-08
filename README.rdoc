@@ -24,7 +24,6 @@ Example goes here.
 == Usage
 
  config.gem 'jakewendt-simply_taggable',
-   :lib    => 'simply_taggable',
    :source => 'http://rubygems.org'
 
  script/generate simply_taggable

@@ -1,1 +1,1 @@
-require 'simply_taggable'
+require 'jakewendt-simply_taggable'
