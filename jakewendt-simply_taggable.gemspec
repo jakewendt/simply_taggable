@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{jakewendt-simply_taggable}
-  s.version = "0.3.1"
+  s.version = "0.3.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["George 'Jake' Wendt"]
-  s.date = %q{2011-05-26}
+  s.date = %q{2011-08-10}
   s.description = %q{longer description of your gem}
   s.email = %q{github@jake.otherinbox.com}
   s.extra_rdoc_files = [
@@ -31,7 +31,8 @@ Gem::Specification.new do |s|
     "lib/simply_taggable/base.rb",
     "lib/simply_taggable/tasks.rb",
     "lib/simply_taggable/test_tasks.rb",
-    "lib/tasks/simply_taggable_tasks.rake"
+    "lib/tasks/simply_taggable_tasks.rake",
+    "rails/init.rb"
   ]
   s.homepage = %q{http://github.com/jakewendt/simply_taggable}
   s.require_paths = ["lib"]
